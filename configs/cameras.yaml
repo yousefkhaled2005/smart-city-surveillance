@@ -1,0 +1,14 @@
+cameras:
+  - id: "cam_gate_01"
+    name: "Main Perimeter Gate"
+    stream_url: "rtsp://simulated/cam_01"
+    fps: 30
+    zones:
+      restricted_polygon: [[100, 100], [500, 100], [500, 400], [100, 400]]
+
+  - id: "cam_plaza_02"
+    name: "Central Public Plaza"
+    stream_url: "rtsp://simulated/cam_02"
+    fps: 30
+    zones:
+      crowd_threshold: 45
